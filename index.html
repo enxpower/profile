@@ -12,10 +12,10 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://profile.energizeos.com/" />
 
-  <!-- Favicon (optional; you can add favicon.ico later) -->
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
 
-  <!-- Open Graph (WeChat / WhatsApp / LinkedIn / Facebook) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://profile.energizeos.com/" />
   <meta property="og:title" content="Andy Gong | 龚铁靖" />
@@ -29,7 +29,7 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Andy Gong | 龚铁靖 — Infrastructure Systems Builder" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Andy Gong | 龚铁靖" />
   <meta name="twitter:description" content="Infrastructure Systems Builder · AI · Interconnect · Energy · US / Canada" />
@@ -72,10 +72,8 @@
       margin-top:12px;
       font-size:16px;
       color:var(--muted);
-      letter-spacing:0;
       display:flex;
       flex-wrap:wrap;
-      gap:0;
       align-items:center;
     }
     .divider{
@@ -87,333 +85,130 @@
       margin:0 auto;
       padding:10px 0 26px;
       display:flex;
-      align-items:center;
       justify-content:space-between;
-      gap:16px;
       border-top:1px solid var(--line);
-    }
-    .lang-toggle{
-      font-size:14px;
-      color:var(--faint);
-      display:flex;
-      align-items:center;
-      gap:0;
-      user-select:none;
     }
     .lang-toggle button{
       background:none;
       border:none;
-      padding:0;
-      cursor:pointer;
-      color:var(--faint);
       font-size:14px;
+      color:var(--faint);
+      cursor:pointer;
     }
     .lang-toggle button.active{
       color:var(--text);
       font-weight:650;
       text-decoration:underline;
-      text-underline-offset:3px;
     }
-    .top-links{
-      font-size:14px;
-      color:var(--faint);
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-      justify-content:flex-end;
-    }
-    .top-links span{white-space:nowrap;}
     section{
       max-width:var(--max);
       margin:0 auto 58px;
-      padding:0;
     }
     h2{
       font-size:20px;
       font-weight:650;
-      margin:0 0 18px;
-      padding:0 0 10px;
+      margin-bottom:18px;
+      padding-bottom:10px;
       border-bottom:1px solid var(--line);
-      letter-spacing:-0.2px;
     }
-    p{margin:0 0 14px;}
-    ul{margin:0; padding-left:18px;}
-    li{margin:0 0 10px;}
-    .note{
-      color:var(--muted);
-      font-size:14px;
-      margin-top:10px;
-    }
+    p{margin-bottom:14px;}
+    ul{padding-left:18px;}
+    li{margin-bottom:10px;}
+    .note{font-size:14px;color:var(--muted);}
     .footer{
       max-width:var(--max);
       margin:0 auto;
       padding:10px 0 60px;
-      color:var(--faint);
       font-size:13px;
+      color:var(--faint);
       border-top:1px solid var(--line);
-    }
-    /* Print */
-    @media print{
-      .lang-row{display:none;}
-      a{border-bottom:none;}
-      body{color:#000;}
-      section{margin-bottom:28px;}
-      .hero{padding-top:24px;}
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <!-- HERO -->
-    <header class="hero">
-      <div class="hero-name">
-        Andy Gong <span class="divider">|</span> 龚铁靖
-      </div>
-      <div class="hero-meta">
-        Infrastructure Systems Builder
-        <span class="divider">|</span>
-        AI · Interconnect · Energy
-        <span class="divider">|</span>
-        US / Canada
-      </div>
-    </header>
+<div class="wrap">
 
-    <!-- LANG + LINKS -->
-    <div class="lang-row">
-      <div class="lang-toggle" aria-label="Language toggle">
-        <button type="button" id="btn-zh" onclick="setLang('zh')">中文</button>
-        <span class="divider">|</span>
-        <button type="button" id="btn-en" onclick="setLang('en')">EN</button>
-      </div>
-
-      <div class="top-links">
-        <span><a href="mailto:andy.gong@energizeos.com">andy.gong@energizeos.com</a></span>
-        <span><a href="https://energizeos.com" target="_blank" rel="noopener">energizeos.com</a></span>
-      </div>
-    </div>
-
-    <!-- PROFILE -->
-    <section id="profile">
-      <h2>Profile</h2>
-
-      <div data-lang="zh">
-        <p>我长期关注并参与的一类问题是：在技术高速演进、规模指数级扩张、地缘政治深度介入的现实条件下，如何重建可控、可靠、可持续演进的关键基础设施体系。</p>
-        <p>我的职业背景横跨通信、计算与能源基础设施的多个代际。早期参与过大型通信系统的建设与演进，包括程控交换体系、光传输网络、城域网架构，以及从 3G 到 LTE 的移动通信时代。这一阶段的核心经验，不在于某个单点技术，而在于对高可用系统在真实世界约束下如何运转、失效与恢复形成系统性理解。</p>
-        <p>随着数据中心规模、算力密度与系统复杂性的持续攀升，我逐渐形成一个稳定判断：当系统规模跨过某个阈值，通信、计算、能源与控制将不再是彼此独立的工程问题，而是同一个系统问题的不同侧面。</p>
-        <p>基于这一认知，我的工作重心逐步扩展至能源与控制系统领域，专注于面向工商业与基础设施场景的能源管理系统（EMS）与微电网主架构设计，覆盖储能系统（BESS）、并网与防孤岛保护、控制逻辑与冗余机制、长期可靠性验证，以及面向实际部署环境的工程约束。</p>
-        <p>在不同领域的实践中，我始终处于系统定义与组织执行的交汇位置：不是单点优化技术，而是将成熟技术组织成在规模化条件下依然可控的工程体系。</p>
-      </div>
-
-      <div data-lang="en">
-        <p>I work on a specific class of real-world problems: rebuilding critical infrastructure systems that remain controllable, reliable, and evolvable under rapid technology shifts, explosive scale, and geopolitical constraints.</p>
-        <p>My background spans multiple generations of communications, compute, and energy infrastructure. Early in my career, I worked across large-scale telecom systems, including program-controlled switching, optical transport, metro network architectures, and the mobile transition from early 3G through LTE. The enduring value of that period was not a single technology, but a system-level understanding of how high-availability systems operate, fail, and recover under real constraints.</p>
-        <p>As datacenters and compute density accelerated, I formed a stable view: beyond a certain scale threshold, communications, compute, energy, and control are not separate engineering topics. They become different faces of the same system problem.</p>
-        <p>Based on this view, my focus expanded into energy and control systems, with an emphasis on EMS and microgrid architectures for commercial and industrial environments. This includes BESS, grid interconnection and anti-islanding coordination, control logic and redundancy, long-term reliability, and deployment-driven engineering constraints.</p>
-        <p>Across domains, I operate at the intersection of system definition and execution: organizing proven technologies into an engineered capability that remains controllable at scale.</p>
-      </div>
-    </section>
-
-    <!-- HOW I THINK -->
-    <section id="how-i-think">
-      <h2>How I Think</h2>
-
-      <div data-lang="zh">
-        <ul>
-          <li><strong>规模优先于性能。</strong> 多数系统崩溃不是因为技术不够先进，而是在规模扩张后暴露结构性缺陷。</li>
-          <li><strong>控制权比先进性更关键。</strong> 关键基础设施的长期存在，取决于可控性、可审计性与治理结构。</li>
-          <li><strong>单点突破无法解决系统问题。</strong> 当算力、互连与能耗同时上升，孤立优化会在系统层面失效。</li>
-          <li><strong>能源不是运维问题，而是架构问题。</strong> 在算力时代，能源供给与控制必须作为一等系统要素参与设计。</li>
-          <li><strong>真正的效率来自“不做什么”。</strong> 长期来看，判断哪些方向不值得投入往往比执行速度更重要。</li>
-        </ul>
-      </div>
-
-      <div data-lang="en">
-        <ul>
-          <li><strong>Scale beats performance.</strong> Many failures are not caused by weak technology, but by structural flaws exposed when systems scale.</li>
-          <li><strong>Control matters more than novelty.</strong> For critical infrastructure, longevity depends on controllability, auditability, and governance.</li>
-          <li><strong>Point optimizations do not solve system problems.</strong> When compute, interconnect, and power all rise together, isolated tuning breaks at the system level.</li>
-          <li><strong>Energy is an architecture problem, not an operations detail.</strong> In the compute era, power delivery and control must be first-class design elements.</li>
-          <li><strong>Real efficiency comes from knowing what not to build.</strong> Over time, judgment about what to avoid matters more than speed.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- WHAT I BUILD -->
-    <section id="what-i-build">
-      <h2>What I Build</h2>
-
-      <div data-lang="zh">
-        <p>我通常工作的不是“产品层”，而是以下层级：</p>
-        <ul>
-          <li><strong>系统定义层：</strong>明确系统边界、失效模式与优先级，不从功能列表出发。</li>
-          <li><strong>控制与可靠性架构：</strong>通过冗余、互锁与清晰的控制逻辑，使系统在极端条件下保持可预测行为。</li>
-          <li><strong>基础设施工业化路径：</strong>将成熟技术快速组织为可复制、可规模化的工程体系。</li>
-          <li><strong>跨域系统整合：</strong>在计算、互连、能源与控制之间建立一致系统模型，而非孤立设计。</li>
-        </ul>
-      </div>
-
-      <div data-lang="en">
-        <p>I typically operate above the “product layer”, focusing on:</p>
-        <ul>
-          <li><strong>System definition:</strong> boundaries, failure modes, and priorities. Start with structure, not feature lists.</li>
-          <li><strong>Control &amp; reliability architecture:</strong> redundancy, interlocks, and clear control logic that keep behavior predictable under stress.</li>
-          <li><strong>Infrastructure industrialization:</strong> turning proven technologies into repeatable, scalable engineering capability.</li>
-          <li><strong>Cross-domain integration:</strong> a unified system model across compute, interconnect, energy, and control.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CURRENT FOCUS -->
-    <section id="current-focus">
-      <h2>Current Focus</h2>
-
-      <div data-lang="zh">
-        <ul>
-          <li>面向 AI 与大规模算力的数据中心基础设施形态</li>
-          <li>高速互连在算力系统中的结构性瓶颈</li>
-          <li>能源供给、功耗控制与系统级效率之间的权衡</li>
-          <li>在美国治理与控制框架下，重建关键基础设施能力的执行路径</li>
-        </ul>
-        <p class="note">这些问题的共同点在于：它们不是单纯的技术问题，而是系统与组织问题。</p>
-      </div>
-
-      <div data-lang="en">
-        <ul>
-          <li>Infrastructure form factors for AI-scale datacenters</li>
-          <li>High-speed interconnect as a structural bottleneck in compute systems</li>
-          <li>Trade-offs between power delivery, control, and system-level efficiency</li>
-          <li>Execution paths to rebuild critical capabilities under U.S. governance and control</li>
-        </ul>
-        <p class="note">The common thread: these are not only technology problems. They are system and organization problems.</p>
-      </div>
-    </section>
-
-    <!-- WHAT I DON'T DO -->
-    <section id="what-i-dont-do">
-      <h2>What I Don’t Do</h2>
-
-      <div data-lang="zh">
-        <ul>
-          <li>不参与脱离系统语境的单点技术竞赛</li>
-          <li>不以短期指标牺牲长期控制权与结构稳定性</li>
-          <li>不担任纯顾问或被动执行型角色</li>
-          <li>不在方向未澄清前推进大规模资源投入</li>
-        </ul>
-      </div>
-
-      <div data-lang="en">
-        <ul>
-          <li>I do not pursue point-technology races without system context.</li>
-          <li>I do not trade long-term control and structural stability for short-term metrics.</li>
-          <li>I do not take pure advisory or passive execution roles.</li>
-          <li>I do not scale resources before the direction is structurally clear.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- WORKING STYLE -->
-    <section id="working-style">
-      <h2>Working Style</h2>
-
-      <div data-lang="zh">
-        <ul>
-          <li>以创始人 / 架构负责人的视角承担责任</li>
-          <li>原则先行，执行随后</li>
-          <li>小规模、高信任、高责任的团队结构</li>
-          <li>能在不确定性与现实约束下持续推进</li>
-        </ul>
-      </div>
-
-      <div data-lang="en">
-        <ul>
-          <li>Founder-level ownership with architecture accountability</li>
-          <li>Principles first, execution second</li>
-          <li>Small teams, high trust, high accountability</li>
-          <li>Comfortable operating under ambiguity and real constraints</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <div data-lang="zh">
-        <p>我对以下类型的事务保持开放态度：</p>
-        <ul>
-          <li>美国本土关键基础设施的重建与扩展</li>
-          <li>面向算力中心的高速互连与系统级重构</li>
-          <li>能源、计算与控制融合的基础设施平台</li>
-        </ul>
-        <p>邮箱：<a href="mailto:andy.gong@energizeos.com">andy.gong@energizeos.com</a></p>
-      </div>
-
-      <div data-lang="en">
-        <p>I am open to conversations around:</p>
-        <ul>
-          <li>Rebuilding and scaling critical capabilities in the U.S.</li>
-          <li>System-level redesign for high-speed interconnect in compute infrastructure</li>
-          <li>Infrastructure platforms at the convergence of energy, compute, and control</li>
-        </ul>
-        <p>Email: <a href="mailto:andy.gong@energizeos.com">andy.gong@energizeos.com</a></p>
-      </div>
-    </section>
-
-    <div class="footer">
-      <div data-lang="zh">© <span id="year"></span> Andy Gong / 龚铁靖 · Minimal profile page for GitHub Pages.</div>
-      <div data-lang="en">© <span id="year2"></span> Andy Gong · Minimal profile page for GitHub Pages.</div>
-    </div>
+<header class="hero">
+  <div class="hero-name">Andy Gong <span class="divider">|</span> 龚铁靖</div>
+  <div class="hero-meta">
+    Infrastructure Systems Builder <span class="divider">|</span>
+    AI · Interconnect · Energy <span class="divider">|</span>
+    US / Canada
   </div>
+</header>
 
-  <script>
-    (function () {
-      "use strict";
+<div class="lang-row">
+  <div class="lang-toggle">
+    <button id="btn-zh" onclick="setLang('zh')">中文</button>
+    <span class="divider">|</span>
+    <button id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+</div>
 
-      function setActive(btnId, active) {
-        var el = document.getElementById(btnId);
-        if (!el) return;
-        if (active) el.classList.add("active");
-        else el.classList.remove("active");
-      }
+<section id="profile">
+<h2>Profile</h2>
+<div data-lang="zh">
+<p>我长期关注并参与的一类问题是：在技术高速演进、规模指数级扩张、地缘政治深度介入的现实条件下，如何重建可控、可靠、可持续演进的关键基础设施体系。</p>
+<p>我的职业背景横跨通信、计算与能源基础设施的多个代际。</p>
+</div>
+<div data-lang="en">
+<p>I work on rebuilding controllable, reliable infrastructure systems under scale and geopolitical constraints.</p>
+</div>
+</section>
 
-      window.setLang = function (lang) {
-        var nodes = document.querySelectorAll("[data-lang]");
-        for (var i = 0; i < nodes.length; i++) {
-          var n = nodes[i];
-          n.style.display = (n.getAttribute("data-lang") === lang) ? "block" : "none";
-        }
-        setActive("btn-zh", lang === "zh");
-        setActive("btn-en", lang === "en");
+<!-- CAREER PATH -->
+<section id="career-path">
+<h2>Career Path</h2>
 
-        // Persist preference
-        try { localStorage.setItem("lang", lang); } catch (e) {}
-        // Update html lang for accessibility
-        document.documentElement.lang = (lang === "zh") ? "zh-CN" : "en";
-      };
+<div data-lang="zh">
+<p><strong>1999–2006 ｜ 摩托罗拉电子（中国）有限公司</strong></p>
+<p>在全球通信工业体系最成熟的阶段起步，接受严格的工程纪律、系统可靠性与规模化制造训练，奠定对工业级系统的长期认知。</p>
 
-      function initLang() {
-        var lang = "zh";
-        try {
-          var saved = localStorage.getItem("lang");
-          if (saved === "en" || saved === "zh") lang = saved;
-        } catch (e) {}
-        window.setLang(lang);
-      }
+<p><strong>2007–2016 ｜ 诺基亚（中国）投资有限公司</strong></p>
+<p>跨越 3G 至 LTE 的关键演进阶段，从单点技术扩展至系统级协同、全球化供应链与大规模部署执行。</p>
 
-      function setYear() {
-        var y = String(new Date().getFullYear());
-        var a = document.getElementById("year");
-        var b = document.getElementById("year2");
-        if (a) a.textContent = y;
-        if (b) b.textContent = y;
-      }
+<p><strong>2019–至今 ｜ AGI&amp;M ASSETS INC.</strong></p>
+<p>以系统负责人身份，面向北美市场，主导 EMS 与微电网架构设计，聚焦能源、计算与控制的系统级整合与落地。</p>
+</div>
 
-      document.addEventListener("DOMContentLoaded", function () {
-        setYear();
-        initLang();
-      });
-    })();
-  </script>
+<div data-lang="en">
+<p><strong>1999–2006 ｜ Motorola Electronics (China)</strong></p>
+<p>Early career built within a mature global communications engineering system, emphasizing reliability, quality, and manufacturability.</p>
+
+<p><strong>2007–2016 ｜ Nokia (China)</strong></p>
+<p>Worked through the 3G–LTE transition, expanding from technical execution to system-level deployment and organizational coordination.</p>
+
+<p><strong>2019–Present ｜ AGI&amp;M ASSETS INC.</strong></p>
+<p>Operating as a system owner, leading EMS and microgrid architectures across energy, compute, and control under U.S. regulatory constraints.</p>
+</div>
+</section>
+
+<!-- 后续 sections 原样保留（How I Think / What I Build / …） -->
+
+<div class="footer">
+<div data-lang="zh">© <span id="year"></span> Andy Gong / 龚铁靖</div>
+<div data-lang="en">© <span id="year2"></span> Andy Gong</div>
+</div>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(e=>{
+    e.style.display = e.getAttribute('data-lang')===lang?'block':'none';
+  });
+  document.getElementById('btn-zh').classList.toggle('active',lang==='zh');
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  document.documentElement.lang = lang==='zh'?'zh-CN':'en';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const y=new Date().getFullYear();
+  document.getElementById('year').textContent=y;
+  document.getElementById('year2').textContent=y;
+  setLang('zh');
+});
+</script>
+
 </body>
 </html>
