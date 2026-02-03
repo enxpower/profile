@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Team | EnergizeOS</title>
+
+  <meta name="description" content="Team — Infrastructure · AI · Interconnect · Energy" />
+
+  <link rel="canonical" href="https://profile.energizeos.com/team/" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://profile.energizeos.com/team/" />
+  <meta property="og:title" content="Team | EnergizeOS" />
+  <meta property="og:description" content="Infrastructure · AI · Interconnect · Energy" />
+  <meta property="og:site_name" content="EnergizeOS Team" />
+
+  <meta property="og:image" content="https://profile.energizeos.com/og.png" />
+  <meta property="og:image:secure_url" content="https://profile.energizeos.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Team | EnergizeOS" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Team | EnergizeOS" />
+  <meta name="twitter:description" content="Infrastructure · AI · Interconnect · Energy" />
+  <meta name="twitter:image" content="https://profile.energizeos.com/og.png" />
+
+  <style>
+    :root{
+      --text:#111;
+      --muted:#666;
+      --faint:#999;
+      --line:#eee;
+      --bg:#fff;
+      --max:900px;
+    }
+    *{box-sizing:border-box;}
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue",Arial,sans-serif;
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit; text-decoration:none; border-bottom:1px solid rgba(0,0,0,.2);}
+    a:hover{border-bottom-color:rgba(0,0,0,.5);}
+    .wrap{padding:0 20px;}
+
+    .hero{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:78px 0 18px;
+    }
+    .hero-name{
+      font-size:36px;
+      font-weight:650;
+      letter-spacing:-0.5px;
+    }
+    .hero-meta{
+      margin-top:12px;
+      font-size:16px;
+      color:var(--muted);
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:0;
+    }
+    .divider{ margin:0 10px; color:#bbb; }
+
+    .lang-row{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 0 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      border-top:1px solid var(--line);
+    }
+    .lang-toggle{
+      font-size:14px;
+      color:var(--faint);
+      display:flex;
+      align-items:center;
+      user-select:none;
+    }
+    .lang-toggle button{
+      background:none;
+      border:none;
+      padding:0;
+      cursor:pointer;
+      color:var(--faint);
+      font-size:14px;
+    }
+    .lang-toggle button.active{
+      color:var(--text);
+      font-weight:650;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .top-links{
+      font-size:14px;
+      color:var(--faint);
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      justify-content:flex-end;
+    }
+    .top-links span{white-space:nowrap;}
+
+    section{
+      max-width:var(--max);
+      margin:0 auto 58px;
+      padding:0;
+    }
+    h2{
+      font-size:20px;
+      font-weight:650;
+      margin:0 0 18px;
+      padding:0 0 10px;
+      border-bottom:1px solid var(--line);
+      letter-spacing:-0.2px;
+    }
+    p{margin:0 0 14px;}
+    ul{margin:0; padding-left:18px;}
+    li{margin:0 0 10px;}
+
+    .note{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:10px;
+    }
+
+    .person{
+      margin:0 auto 44px;
+      padding:0 0 6px;
+    }
+    .person-head{
+      margin:0 0 14px;
+      padding:0;
+    }
+    .person-name{
+      font-size:22px;
+      font-weight:650;
+      letter-spacing:-0.2px;
+      margin:0;
+    }
+    .person-role{
+      margin-top:6px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .person-block{
+      border-top:1px solid var(--line);
+      padding-top:18px;
+      margin-top:18px;
+    }
+    .subhead{
+      font-size:16px;
+      font-weight:650;
+      margin:0 0 10px;
+      letter-spacing:-0.1px;
+    }
+
+    .career{ margin:0; padding:0; }
+    .career-item{ margin:0 0 16px; padding:0; }
+    .career-title{
+      font-size:16px;
+      font-weight:650;
+      margin:0 0 8px;
+    }
+    .career-title .sep{ margin:0 10px; color:#bbb; font-weight:400; }
+    .career-tags{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:6px;
+    }
+
+    .footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 0 60px;
+      color:var(--faint);
+      font-size:13px;
+      border-top:1px solid var(--line);
+    }
+
+    @media print{
+      .lang-row{display:none;}
+      a{border-bottom:none;}
+      body{color:#000;}
+      section{margin-bottom:28px;}
+      .hero{padding-top:24px;}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-name">Team</div>
+      <div class="hero-meta">
+        Infrastructure
+        <span class="divider">|</span>
+        AI · Interconnect · Energy
+        <span class="divider">|</span>
+        US / Canada
+      </div>
+    </header>
+
+    <div class="lang-row">
+      <div class="lang-toggle" aria-label="Language toggle">
+        <button type="button" id="btn-zh" onclick="setLang('zh')">中文</button>
+        <span class="divider">|</span>
+        <button type="button" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+
+      <div class="top-links">
+        <span><a href="mailto:andy.gong@energizeos.com">andy.gong@energizeos.com</a></span>
+        <span><a href="https://energizeos.com" target="_blank" rel="noopener">energizeos.com</a></span>
+      </div>
+    </div>
+
+    <section id="team">
+      <h2>Team</h2>
+
+      <!-- Person: Gong -->
+      <section class="person" id="gong">
+        <div class="person-head">
+          <div class="person-name">龚铁靖</div>
+          <div class="person-role" data-lang="zh">微电网 EMS 系统架构师 · 创始人 · 工程级技术负责人</div>
+          <div class="person-role" data-lang="en">Microgrid EMS System Architect · Founder · Engineering Owner</div>
+        </div>
+
+        <div class="person-block">
+          <div class="subhead">Profile</div>
+
+          <div data-lang="zh">
+            <p>我长期关注并参与的一类问题是：在技术高速演进、规模指数级扩张、地缘政治深度介入的现实条件下，如何重建可控、可靠、可持续演进的关键基础设施体系。</p>
+            <p>职业背景横跨通信、计算与能源基础设施多个代际。早期参与大型通信系统建设与演进，随后将工作重心扩展至能源与控制系统，专注面向工商业与基础设施场景的能源管理系统（EMS）与微电网主架构设计。</p>
+            <p>当前重点包括：储能系统（BESS）、并网/离网切换控制、防孤岛与保护协调、控制逻辑与冗余机制、长期可靠性验证，以及面向实际部署环境的工程约束。核心方法论是将成熟技术组织为在规模化条件下依然可控的工程体系。</p>
+          </div>
+
+          <div data-lang="en">
+            <p>I work on real-world problems around critical infrastructure: building systems that remain controllable, reliable, and evolvable under rapid technology shifts and explosive scale.</p>
+            <p>My background spans multiple generations of communications, compute, and energy infrastructure. I focus on EMS and microgrid architectures for commercial and industrial environments.</p>
+            <p>Current work includes BESS, grid/island transition logic, anti-islanding and protection coordination, control logic and redundancy, long-term reliability, and deployment-driven engineering constraints. The core is organizing proven technologies into controllable engineered capability at scale.</p>
+          </div>
+        </div>
+
+        <div class="person-block">
+          <div class="subhead">Career Path</div>
+
+          <div data-lang="zh" class="career">
+            <div class="career-item">
+              <div class="career-title">1999–2006 <span class="sep">|</span> 摩托罗拉电子（中国）有限公司</div>
+              <p>工业级工程、制造与质量体系训练；强调可靠性、变更控制与可复制性交付。</p>
+              <div class="career-tags">关键词：工业化工程 · 质量体系 · 可靠性</div>
+            </div>
+
+            <div class="career-item">
+              <div class="career-title">2007–2016 <span class="sep">|</span> 诺基亚（中国）投资有限公司</div>
+              <p>参与 3G→LTE 系统演进；系统工程视角下的集成、节拍与风险控制。</p>
+              <div class="career-tags">关键词：系统工程 · 规模化交付 · 执行节拍</div>
+            </div>
+
+            <div class="career-item">
+              <div class="career-title">2019–至今 <span class="sep">|</span> AGI&amp;M ASSETS INC.</div>
+              <p>面向北美市场，主导能源与控制基础设施系统定义、架构设计与工程落地；覆盖 BESS 与 EMS 并网协调、冗余互锁与长期可靠性。</p>
+              <div class="career-tags">关键词：系统负责人 · 北美市场 · 工程闭环</div>
+            </div>
+          </div>
+
+          <div data-lang="en" class="career">
+            <div class="career-item">
+              <div class="career-title">1999–2006 <span class="sep">|</span> Motorola Electronics (China) Co., Ltd.</div>
+              <p>Industrial engineering discipline across manufacturing and quality systems; reliability and repeatability driven execution.</p>
+              <div class="career-tags">Keywords: Industrial engineering · Quality systems · Reliability</div>
+            </div>
+
+            <div class="career-item">
+              <div class="career-title">2007–2016 <span class="sep">|</span> Nokia (China) Investment Co., Ltd.</div>
+              <p>System execution during 3G→LTE evolution; integration, cadence, and risk control across parallel teams.</p>
+              <div class="career-tags">Keywords: System engineering · Scaled delivery · Execution cadence</div>
+            </div>
+
+            <div class="career-item">
+              <div class="career-title">2019–Present <span class="sep">|</span> AGI&amp;M ASSETS INC.</div>
+              <p>System owner for North American energy/control infrastructure; BESS and EMS architecture, interconnection coordination, redundancy, and field reliability.</p>
+              <div class="career-tags">Keywords: System ownership · North America · Engineering closure</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-block">
+          <div class="subhead">Links</div>
+          <div data-lang="zh">
+            <p>邮箱：<a href="mailto:andy.gong@energizeos.com">andy.gong@energizeos.com</a> · 网站：<a href="https://energizeos.com" target="_blank" rel="noopener">energizeos.com</a></p>
+          </div>
+          <div data-lang="en">
+            <p>Email: <a href="mailto:andy.gong@energizeos.com">andy.gong@energizeos.com</a> · Website: <a href="https://energizeos.com" target="_blank" rel="noopener">energizeos.com</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Person: Dr. Pei -->
+      <section class="person" id="pei">
+        <div class="person-head">
+          <div class="person-name">Dr. Pei <span class="divider">|</span> 裴博士</div>
+          <div class="person-role" data-lang="zh">电网控制与并网标准专家 · 公用事业高级工程师 · IEEE Fellow</div>
+          <div class="person-role" data-lang="en">Grid Control & Standards Expert · Utility Senior Engineer · IEEE Fellow</div>
+        </div>
+
+        <div class="person-block">
+          <div class="subhead">Profile</div>
+
+          <div data-lang="zh">
+            <p>裴博士，卡内基梅隆大学物理学博士、北卡罗来纳大学电气工程博士，现任 Pacific Gas and Electric Company（PG&amp;E）高级工程师，IEEE Fellow，加州能源委员会（CEC）标准委员会常务委员。</p>
+            <p>长期从事电网控制与运行管理、电力系统稳定性、分布式能源并网及保护协调相关的工程与技术研究工作，关注控制策略在真实电网约束下的工程可实现性与长期可靠性。</p>
+            <p>在公用事业体系内，工作重点包括控制策略评估、并网影响分析、电压与频率稳定性研究，以及 EMS、SCADA 与保护系统之间的控制边界与工程适配性审查。</p>
+            <p class="note">本页面为专业背景摘要，不构成 Engineer of Record 或合规责任承诺。</p>
+          </div>
+
+          <div data-lang="en">
+            <p>Dr. Pei holds a Ph.D. in Physics from Carnegie Mellon University and a Ph.D. in Electrical Engineering from the University of North Carolina. He is a Senior Engineer at Pacific Gas and Electric Company (PG&amp;E), an IEEE Fellow, and a standing member of the California Energy Commission (CEC) Standards Committee.</p>
+            <p>He has extensive experience in grid control and operations, power system stability, DER interconnection, and protection coordination, with a focus on engineering feasibility and long-term reliability under real grid constraints.</p>
+            <p>His work includes evaluating control strategies, assessing impacts of inverter-based resources, and reviewing alignment across EMS, SCADA, and protection systems.</p>
+            <p class="note">This page is a professional summary and does not imply Engineer of Record responsibility.</p>
+          </div>
+        </div>
+
+        <div class="person-block">
+          <div class="subhead">Focus Areas</div>
+
+          <div data-lang="zh">
+            <ul>
+              <li>电网控制策略与运行管理</li>
+              <li>高比例电力电子资源接入下的稳定性与工程约束</li>
+              <li>DER / BESS / Microgrid 并网影响评估与保护协调</li>
+              <li>标准与监管要求的工程化落地与技术审查</li>
+            </ul>
+          </div>
+
+          <div data-lang="en">
+            <ul>
+              <li>Grid control strategies and operations</li>
+              <li>Stability and engineering constraints under high inverter penetration</li>
+              <li>DER / BESS / microgrid interconnection and protection coordination</li>
+              <li>Engineering interpretation and implementation of standards and regulatory requirements</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Future members: copy a <section class="person"> block and paste here -->
+    </section>
+
+    <div class="footer">
+      <div data-lang="zh">© <span id="year"></span> Team · Minimal team page for GitHub Pages.</div>
+      <div data-lang="en">© <span id="year2"></span> Team · Minimal team page for GitHub Pages.</div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      function setActive(btnId, active) {
+        var el = document.getElementById(btnId);
+        if (!el) return;
+        if (active) el.classList.add("active");
+        else el.classList.remove("active");
+      }
+
+      window.setLang = function (lang) {
+        var nodes = document.querySelectorAll("[data-lang]");
+        for (var i = 0; i < nodes.length; i++) {
+          var n = nodes[i];
+          n.style.display = (n.getAttribute("data-lang") === lang) ? "block" : "none";
+        }
+        setActive("btn-zh", lang === "zh");
+        setActive("btn-en", lang === "en");
+        try { localStorage.setItem("lang", lang); } catch (e) {}
+        document.documentElement.lang = (lang === "zh") ? "zh-CN" : "en";
+      };
+
+      function initLang() {
+        var lang = "zh";
+        try {
+          var saved = localStorage.getItem("lang");
+          if (saved === "en" || saved === "zh") lang = saved;
+        } catch (e) {}
+        window.setLang(lang);
+      }
+
+      function setYear() {
+        var y = String(new Date().getFullYear());
+        var a = document.getElementById("year");
+        var b = document.getElementById("year2");
+        if (a) a.textContent = y;
+        if (b) b.textContent = y;
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setYear();
+        initLang();
+      });
+    })();
+  </script>
+</body>
+</html>
